@@ -1,3 +1,4 @@
+const {tradingBot} = require('./tradingLogic');
 const generateProfitLossReport = () => {
   const { balance, stockHeld, stockBuyPrice } = tradingBot;
   const currentStockValue = stockHeld * stockBuyPrice;
@@ -11,3 +12,5 @@ const generateProfitLossReport = () => {
     profitOrLoss: `$${profitOrLoss.toFixed(2)}`,
   };
 };
+
+module.exports = { generateProfitLossReport };

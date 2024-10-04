@@ -33,4 +33,4 @@ const executeStrategy = (currentPrice) => {
   }
   console.log(`Updated Balance: $${tradingBot.balance.toFixed(2)}`);
 };
-module.exports = { executeStrategy };
+module.exports = { executeStrategy,tradingBot };
